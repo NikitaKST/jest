@@ -9,5 +9,4 @@ cache:
 install:
   - npm install
 build: off
-test_script:
-  - npm run test
+test_script: npm run test
