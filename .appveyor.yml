@@ -1,19 +1,14 @@
 image: Ubuntu1804
 stack: node 18
-
 branches:
   only:
     - master
-
 cache:
   directories:
     - node_modules
-
 install:
   - npm install
-
 build: off
-
 test_script:
   - npm run test
   - npm run lint
