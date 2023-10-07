@@ -14,9 +14,7 @@ install:
 
 build: off
 
-# Этот код использует свойство `steps` для определения двух команд тестирования.
-steps:
-- npm run lint
-- npm run test
+# Этот код использует сценарий npm, который выполняет обе команды тестирования.
+test_script: npm test:unit
 
 
