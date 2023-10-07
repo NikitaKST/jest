@@ -1,11 +1,9 @@
 image: Ubuntu1804
 stack: node 18
 branches:
-  only:
-    - master
+  only: master
 cache:
-  directories:
-    - node_modules
+  directories: node_modules
 install: npm install
 build: off
 
