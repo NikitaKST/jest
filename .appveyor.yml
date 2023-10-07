@@ -1,27 +1,19 @@
-# Образ для сборки
 image: Ubuntu1804
-
-# Версия Node.js
 stack: node 18
 
-# Ветки, для которых будет выполняться CI
 branches:
   only:
     - master
 
-# Кэширование node_modules для ускорения сборки
-cache: 
+cache:
   directories:
     - node_modules
 
-# Шаг установки зависимостей
 install:
   - npm install
 
-# Отключение сборки (так как используется Node.js)
 build: off
 
-# Сценарий тестирования
 test_script:
   - npm run test
       
