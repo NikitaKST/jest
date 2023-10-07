@@ -1,5 +1,5 @@
 image: Ubuntu1804
-stack: node 18
+stack: node 12
 branches:
   only:
     - master
@@ -9,6 +9,4 @@ cache:
 install:
   - npm install
 build: off
-
-steps:
-- npm run test
+test_script: npm run test
