@@ -6,8 +6,7 @@ branches:
     - master
 
 cache:
-  directories:
-    - node_modules
+  directories: - node_modules
 
 install:
   - npm install
