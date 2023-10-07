@@ -4,7 +4,8 @@ branches:
   only: 
    - master
 cache:
-  directories: node_modules
+  directories:
+   - node_modules
 install: npm install
 build: off
 test_script: npm run test && npm run lint
