@@ -14,5 +14,5 @@ install:
 
 build: off
 
-test_script: npm test
+test_script: npm run lint && npm run test
 
